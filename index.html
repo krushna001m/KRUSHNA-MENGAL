@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krushna Mengal - Web Developer</title>
+    <meta name="description" content="Personal portfolio of Krushna Mengal, a passionate web developer and computer technology student.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="Src/Logo.jpg">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav>
+            <div class="logo">KRUSHNA MENGAL</div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#stats">Stats</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="about" class="hero-section">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="gradient-text">Krushna Mengal</span></h1>
+                <h2 >Web Developer & Computer Technology Student</h2>
+                <p>
+                    I'm a passionate web developer and a diploma student in Computer Technology. 
+                    As a fresher in the tech world, I love building creative and efficient web solutions. 
+                    I'm also a 1st-level hackathon winner, always eager to tackle challenges and innovate. 
+                    My journey is just beginning, but I'm driven to learn, grow, and contribute to the digital landscape.
+                </p>
+                <div class="hero-buttons">
+                    <a href="Src/Resume Krushna Mengal.pdf" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        Contact Me <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-image">
+                    <img src="Src/kRUSHNA001M.png" alt="Krushna Mengal">
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack Section -->
+        <section id="skills" class="section">
+            <h2 class="section-title"><span class="gradient-text">Tech Stack</span></h2>
+            
+            <div class="tabs">
+                <div class="tabs-list">
+                    <button class="tab-trigger active" data-tab="languages">Languages</button>
+                    <button class="tab-trigger" data-tab="tools">Tools</button>
+                    <button class="tab-trigger" data-tab="frameworks">Frameworks</button>
+                </div>
+                
+                <div class="tab-content active" id="languages">
+                    <div class="card">
+                        <div class="badge-container">
+                            <span class="badge bg-blue-600">C</span>
+                            <span class="badge bg-blue-600">C++</span>
+                            <span class="badge bg-orange-600">HTML5</span>
+                            <span class="badge bg-blue-500">CSS3</span>
+                            <span class="badge bg-yellow-500">JavaScript</span>
+                            <span class="badge bg-orange-500">Java</span>
+                            <span class="badge bg-blue-700">Python</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="tools">
+                    <div class="card">
+                        <div class="badge-container">
+                            <span class="badge bg-gray-700">GitHub</span>
+                            <span class="badge bg-red-500">Figma</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="frameworks">
+                    <div class="card">
+                        <div class="badge-container">
+                            <span class="badge bg-blue-400">React</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2 class="section-title"><span class="gradient-text">Projects</span></h2>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Src/EcoAI.jpg" alt="EcoAI - Waste Reduction and Recycling AI Platform">
+                    </div>
+                    <div class="project-header">
+                        <h3>EcoAI - Waste Reduction and Recycling AI Platform</h3>
+                    </div>
+                    <div class="project-content">
+                        <p>
+                          EcoAI is a web-based platform that helps users determine whether an item is recyclable and provides alternatives for waste reduction.</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/krushna001m/EcoAI-Waste-Reduction-and-Recycling-AI-Platform" class="btn btn-sm btn-outline">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="https://krushna001m.github.io/EcoAI-Waste-Reduction-and-Recycling-AI-Platform/" class="btn btn-sm">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Src/SmartNote.jpg" alt="Smart Note-Taking Tool">
+                    </div>
+                    <div class="project-header">
+                        <h3>Smart Note-Taking Tool</h3>
+                    </div>
+                    <div class="project-content">
+                        <p>Smart Note-Taking Tool is an AI-powered app that captures, organizes, and summarizes notes efficiently.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/krushna001m/Smart-Note-Taking-Tool" class="btn btn-sm btn-outline">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="#" class="btn btn-sm">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Src/DungeonMaster.png" alt="AI-Dungeon-Master">
+                    </div>
+                    <div class="project-header">
+                        <h3>AI-Dungeon-Master</h3>
+                    </div>
+                    <div class="project-content">
+                        <p>AI Dungeon Master is a simple text-based adventure game powered by JavaScript. Dive into an exciting world of exploration, puzzles, and adventure as you make choices to shape your story..</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/krushna001m/AI-Dungeon-Master" class="btn btn-sm btn-outline">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="https://krushna001m.github.io/AI-Dungeon-Master/" class="btn btn-sm">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GitHub Stats Section -->
+        <section id="stats" class="section">
+            <h2 class="section-title"><span class="gradient-text">GitHub Stats</span></h2>
+            
+            <div class="stats-tabs">
+                <div class="tabs-list">
+                    <button class="tab-trigger active" data-tab="stats-overview">Overview</button>
+                    <button class="tab-trigger" data-tab="stats-streak">Streak</button>
+                    <button class="tab-trigger" data-tab="stats-languages">Languages</button>
+                    <button class="tab-trigger" data-tab="stats-trophies">Trophies</button>
+                </div>
+                
+                <div class="tab-content active" id="stats-overview">
+                    <div class="card stats-card">
+                        <img src="https://github-readme-stats.vercel.app/api?username=krushna001m&theme=dark&hide_border=false&include_all_commits=false&count_private=false" alt="GitHub Stats">
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="stats-streak">
+                    <div class="card stats-card">
+                        <img src="https://nirzak-streak-stats.vercel.app/?user=krushna001m&theme=dark&hide_border=false" alt="GitHub Streak">
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="stats-languages">
+                    <div class="card stats-card">
+                        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=krushna001m&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact" alt="Top Languages">
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="stats-trophies">
+                    <div class="card stats-card">
+                        <img src="https://github-profile-trophy.vercel.app/?username=krushna001m&theme=radical&no-frame=false&no-bg=true&margin-w=4" alt="GitHub Trophies">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <section class="section quote-section">
+            <div class="card">
+                <h3>Dev Quote</h3>
+                <blockquote>
+                    "Code is like humor. When you have to explain it, it's bad."
+                    <footer>— Cory House</footer>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2 class="section-title"><span class="gradient-text">Get In Touch</span></h2>
+            
+            <div class="contact-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Contact Me</h3>
+                        <p>Fill out the form and I'll get back to you as soon as possible.</p>
+                    </div>
+                    <div class="card-content">
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" placeholder="Your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="Your email">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" placeholder="Your message" rows="5"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Connect With Me</h3>
+                        <p>Reach out through social media or email.</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="connect-list">
+                            <div class="connect-item">
+                                <div class="connect-icon">
+                                    <a href="mailto:krushnamengal46@gmail.com">
+                                        <i class="fas fa-envelope"></i>
+                                    </a>
+                                </div>
+                                <div class="connect-info">
+                                    <h4>Email</h4>
+                                    <p>krushnamengal46@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="connect-item">
+                                <div class="connect-icon">
+                                    <a href="https://linkedin.com/in/krushna001m" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                                <div class="connect-info">
+                                    <h4>LinkedIn</h4>
+                                    <p>linkedin.com/in/krushna001m</p>
+                                </div>
+                            </div>
+                            
+                            <div class="connect-item">
+                                <div class="connect-icon">
+                                    <a href="https://github.com/krushna001m" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                                <div class="connect-info">
+                                    <h4>GitHub</h4>
+                                    <p>github.com/krushna001m</p>
+                                </div>
+                            </div>
+                            
+                            <div class="connect-item">
+                                <div class="connect-icon">
+                                    <a href="https://instagram.com/krushna001m" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                                <div class="connect-info">
+                                    <h4>Instagram</h4>
+                                    <p>instagram.com/krushna001m</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="social-links">
+                <a href="https://github.com/krushna001m" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/krushna001m" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://instagram.com/krushna001m" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://facebook.com/krushna001m" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://x.com/krushna001m" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="mailto:krushnamengal46@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <p>&copy; <span id="current-year"></span> Krushna Mengal. All rights reserved.</p>
+            <div class="visitor-count">
+                <span>Visitor count: </span>
+                <img src="https://visitcount.itsvg.in/api?id=krushna001m&icon=0&color=0" alt="Visitor Count">
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
