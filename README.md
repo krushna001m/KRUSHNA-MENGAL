@@ -9,6 +9,9 @@ This portfolio highlights my:
 - 🏆 Hackathon achievements  
 - 📜 Skills and professional experience  
 
+## 🌍 Live Demo
+👉 [**View Portfolio**](https://krushna001m.github.io/KRUSHNA-MENGAL/)  
+
 ## 🛠️ Technologies Used
 - **HTML** – Structure of the website  
 - **CSS** – Styling and responsiveness  
