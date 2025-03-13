@@ -15,7 +15,7 @@ This portfolio highlights my:
 - **JavaScript** – Dynamic interactivity  
 
 ## 📸 Preview
-![Portfolio Screenshot](.Src/Portfolio-Preview.png)
+![Portfolio Screenshot](Src/Portfolio-Preview.png)
 
 ## 📥 Installation
 1. Clone the repository:  
