@@ -1,5 +1,5 @@
 # KRUSHNA MENGAL
-# Krushna Mengal Portfolio
+# Portfolio
 
 Welcome to my personal portfolio repository! This project showcases my skills and experience as a **Web Developer** and **Computer Technology Student**.
 
