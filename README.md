@@ -4,7 +4,7 @@
 Welcome to my personal portfolio repository! This project showcases my skills and experience as a **Web Developer** and **Computer Technology Student**.
 
 ## 🚀 Project Overview
-This portfolio highlights my:
+My portfolio highlights :
 - 🌐 Web development projects  
 - 🏆 Hackathon achievements  
 - 📜 Skills and professional experience  
