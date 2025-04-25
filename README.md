@@ -1,7 +1,7 @@
 # KRUSHNA MENGAL
 # Portfolio
 
-Welcome to my personal portfolio ! This project showcases my skills and experience as a **Web Developer** and **Computer Technology Student**.
+Welcome to my personal portfolio ! This project showcases my skills and experience as a **FrontEnd Web Developer** and **Computer Technology Student**.
 
 ## 🚀 Project Overvie
 My portfolio highlights :
