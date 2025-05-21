@@ -1,5 +1,16 @@
 # KRUSHNA MENGAL
-# Portfolio
+
+
+## 🧾 Internship Details
+
+* **Company**: CODTECH IT SOLUTIONS
+* **Intern Name**: Krushna Mengal
+* **Intern ID**: CT12WF14
+* **Domain**: Web Development
+* **Duration**: 12 Weeks
+* **Mentor**: Neela Santhosh Kumar
+
+
 
 Welcome to my personal portfolio ! This project showcases my skills and experience as a **FrontEnd Web Developer** and **Computer Technology Student**.
 
