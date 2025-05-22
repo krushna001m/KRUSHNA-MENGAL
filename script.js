@@ -75,11 +75,12 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 
   // Form submission (prevent default for demo)
+ 
   const contactForm = document.querySelector(".contact-form");
 
   if (contactForm) {
     contactForm.addEventListener("submit", function (e) {
-      e.preventDefault(); // prevent default form reload
+      e.preventDefault(); // Stop default form submission
 
       const formData = new FormData(this);
 
@@ -90,17 +91,17 @@ document.addEventListener("DOMContentLoaded", () => {
           Accept: "application/json"
         }
       })
-        .then(response => {
-          if (response.ok) {
-            alert("Thank you for your message!");
-            this.reset();
-          } else {
-            alert("Oops! Something went wrong. Please try again.");
-          }
-        })
-        .catch(error => {
-          alert("An error occurred: " + error.message);
-        });
+      .then(response => {
+        if (response.ok) {
+          alert("✅ Thank you for your message!");
+          this.reset(); // Clear form
+        } else {
+          alert("❌ Oops! Something went wrong. Please try again.");
+        }
+      })
+      .catch(error => {
+        alert("⚠️ An error occurred: " + error.message);
+      });
     });
   }
 
