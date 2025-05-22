@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 
   // Form submission (prevent default for demo)
- 
+ /*
   const contactForm = document.querySelector(".contact-form");
 
   if (contactForm) {
@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-
+*/
   // Add animation on scroll
   const animateOnScroll = () => {
     const sections = document.querySelectorAll(".section")
