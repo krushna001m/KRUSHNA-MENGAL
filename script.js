@@ -75,15 +75,35 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 
   // Form submission (prevent default for demo)
-  const contactForm = document.querySelector(".contact-form")
+  const contactForm = document.querySelector(".contact-form");
 
   if (contactForm) {
     contactForm.addEventListener("submit", function (e) {
-      e.preventDefault()
-      alert("Thank you for your message!")
-      this.reset()
-    })
+      e.preventDefault(); // prevent default form reload
+
+      const formData = new FormData(this);
+
+      fetch(this.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json"
+        }
+      })
+        .then(response => {
+          if (response.ok) {
+            alert("Thank you for your message!");
+            this.reset();
+          } else {
+            alert("Oops! Something went wrong. Please try again.");
+          }
+        })
+        .catch(error => {
+          alert("An error occurred: " + error.message);
+        });
+    });
   }
+
 
   // Add animation on scroll
   const animateOnScroll = () => {
