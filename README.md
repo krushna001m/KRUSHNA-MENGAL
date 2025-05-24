@@ -1,14 +1,6 @@
 # KRUSHNA MENGAL
 
 
-## 🧾 Internship Details
-
-* **Company**: CODTECH IT SOLUTIONS
-* **Intern Name**: Krushna Mengal
-* **Intern ID**: CT12WF14
-* **Domain**: Web Development
-* **Duration**: 12 Weeks
-* **Mentor**: Neela Santhosh Kumar
 
 
 
