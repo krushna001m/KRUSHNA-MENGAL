@@ -260,20 +260,19 @@ Built with a focus on Gender Equality (SDG 5) and Reduced Inequalities (SDG 10),
                     <div class="card-content">
                         
                         <form
-                            class="contact-form" id="contact-form"
->
-                            <div class="form-group">
+                            class="contact-form" id="contact-form">
+                             <div class="form-group">
                                 <label for="name">Name</label>
-                                <input type="text" id="name" placeholder="Your name">
-                            </div>
-                            <div class="form-group">
+                                <input type="text" id="name" name="from_name" placeholder="Your name" required>
+                              </div>
+                              <div class="form-group">
                                 <label for="email">Email</label>
-                                <input type="email" id="email" placeholder="Your email">
-                            </div>
-                            <div class="form-group">
+                                <input type="email" id="email" name="from_email" placeholder="Your email" required>
+                              </div>
+                              < div class="form-group">
                                 <label for="message">Message</label>
-                                <textarea id="message" placeholder="Your message" rows="5"></textarea>
-                            </div>
+                                <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+                              </div>
                             <button type="submit" class="btn btn-primary btn-block">Send Message</button>
                         </form>
                     </div>
