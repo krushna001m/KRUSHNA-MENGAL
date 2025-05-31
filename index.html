@@ -258,9 +258,9 @@ Built with a focus on Gender Equality (SDG 5) and Reduced Inequalities (SDG 10),
                         <p>Fill out the form and I'll get back to you as soon as possible.</p>
                     </div>
                     <div class="card-content">
+
                         
-                        <form
-                            class="contact-form" id="contact-form">
+                        <form class="contact-form" id="contact-form">
                              <div class="form-group">
                                 <label for="name">Name</label>
                                 <input type="text" id="name" name="from_name" placeholder="Your name" required>
@@ -366,7 +366,7 @@ Built with a focus on Gender Equality (SDG 5) and Reduced Inequalities (SDG 10),
     </div>
 
     <script src="script.js"></script>
-    
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
   (function(){
     emailjs.init("PTi9Iuo1Yj94r00Ha"); // Replace with your EmailJS Public Key
@@ -376,7 +376,7 @@ Built with a focus on Gender Equality (SDG 5) and Reduced Inequalities (SDG 10),
   if (contactForm) {
     contactForm.addEventListener("submit", function(e) {
       e.preventDefault();
-      emailjs.sendForm('service_q3mr19z', 'template_hwjwclq', this)
+      emailjs.sendForm('service_oajvkpf','template_gmdb97b', this)
         .then(function() {
           alert('✅ Thank you for your message!');
           contactForm.reset();
