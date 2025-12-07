@@ -229,20 +229,50 @@ Built with a focus on Gender Equality (SDG 5) and Reduced Inequalities (SDG 10),
 
                         
                         <form class="contact-form" id="contact-form">
-                             <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" name="from_name" placeholder="Your name" required>
-                              </div>
-                              <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="from_email" placeholder="Your email" required>
-                              </div>
-                              <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
-                              </div>
-                            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
-                        </form>
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input
+      type="text"
+      id="name"
+      name="from_name"
+      placeholder="Your name"
+      required
+    >
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input
+      type="email"
+      id="email"
+      name="from_email"
+      placeholder="Your email"
+      required
+    >
+  </div>
+
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea
+      id="message"
+      name="message"
+      placeholder="Your message"
+      rows="5"
+      required
+    ></textarea>
+  </div>
+
+  <!-- Optional: you can send extra hidden data to template -->
+  <input type="hidden" name="to_name" value="Krushna">
+
+  <button type="submit" class="btn btn-primary btn-block" id="contact-submit-btn">
+    Send Message
+  </button>
+
+  <!-- Status text -->
+  <p id="contact-status" style="margin-top: 10px; font-size: 0.9rem;"></p>
+</form>
+
                     </div>
                 </div>
                 
@@ -335,29 +365,55 @@ Built with a focus on Gender Equality (SDG 5) and Reduced Inequalities (SDG 10),
 
     <script src="script.js"></script>
  
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script>
-  (function(){
-    emailjs.init("PTi9Iuo1Yj94r00Ha"); // Replace with your EmailJS Public Key
+  // Initialize EmailJS
+  (function () {
+    emailjs.init("PTi9Iuo1Yj94r00Ha"); // Your EmailJS Public Key
   })();
 
   const contactForm = document.getElementById("contact-form");
+  const statusText = document.getElementById("contact-status");
+  const submitBtn = document.getElementById("contact-submit-btn");
+
   if (contactForm) {
-    contactForm.addEventListener("submit", function(e) {
+    contactForm.addEventListener("submit", function (e) {
       e.preventDefault();
-      emailjs.sendForm('service_oajvkpf', 'template_gmdb97b', this)
-        .then(function() {
-          alert('✅ Thank you for your message!');
-          contactForm.reset();
-        }, function(error) {
-          alert('❌ Oops! Something went wrong. Please try again.');
-        });
+
+      // Disable button + show loading text
+      submitBtn.disabled = true;
+      const originalBtnText = submitBtn.textContent;
+      submitBtn.textContent = "Sending...";
+
+      statusText.textContent = "";
+
+      emailjs
+        .sendForm("service_oajvkpf", "template_gmdb97b", contactForm)
+        .then(
+          function () {
+            statusText.style.color = "green";
+            statusText.textContent = "✅ Thank you! Your message has been sent successfully.";
+            contactForm.reset();
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalBtnText;
+          },
+          function (error) {
+            console.error("EmailJS Error:", error);
+            statusText.style.color = "red";
+            statusText.textContent =
+              "❌ Oops! Something went wrong. Please try again later.";
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalBtnText;
+          }
+        );
     });
   }
 </script>
 
+
 </body>
 </html>
+
 
 
 
