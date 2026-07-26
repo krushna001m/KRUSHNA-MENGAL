@@ -468,6 +468,109 @@
     font-size: 0.9rem;
     margin-top: 0.5rem;
   }
+
+  /* Experience Section */
+  .experience-grid {
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .experience-card {
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+  }
+
+  .experience-card:hover {
+    border-color: var(--primary);
+    box-shadow: 0 8px 16px rgba(217, 70, 239, 0.15);
+  }
+
+  .experience-card-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: stretch;
+  }
+
+  .experience-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .experience-duration {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  .experience-intro {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .experience-subtitle {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--primary);
+    font-weight: 600;
+  }
+
+  .experience-list,
+  .awards-list {
+    list-style: none;
+    margin-bottom: 1rem;
+  }
+
+  .experience-list li,
+  .awards-list li {
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    color: var(--text-secondary);
+    position: relative;
+    line-height: 1.6;
+    font-size: 0.95rem;
+  }
+
+  .experience-list li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: bold;
+  }
+
+  .awards-list li::before {
+    content: "★";
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+  }
+
+  .experience-image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: var(--radius);
+    background-color: rgba(217, 70, 239, 0.05);
+    min-height: 300px;
+  }
+
+  .experience-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+  }
+
+  .experience-card:hover .experience-image {
+    transform: scale(1.05);
+  }
   
   /* Contact Section */
   .contact-grid {
@@ -561,6 +664,42 @@
   .connect-info p {
     font-size: 0.85rem;
     color: var(--text-secondary);
+  }
+
+  /* WhatsApp Chat Section */
+  .whatsapp-section {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.875rem 1.5rem;
+    background: linear-gradient(135deg, #25d366 0%, #20ba5d 100%);
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: var(--transition);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .whatsapp-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(37, 211, 102, 0.3);
+  }
+
+  .whatsapp-btn i {
+    font-size: 1.25rem;
   }
   
   /* Footer */
@@ -660,6 +799,15 @@
   
     .projects-grid {
       grid-template-columns: 1fr;
+    }
+
+    .experience-card-layout {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .experience-image-wrapper {
+      min-height: 250px;
     }
   
     .contact-grid {
