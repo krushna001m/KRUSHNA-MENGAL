@@ -754,16 +754,17 @@ blockquote footer {
 }
 
 .connect-info h4 {
-  font-size: 1rem70, 239, 0.1;
-}
-
-.connect-icon i {
-  font-size: 1.2rem;
-}
-
-.connect-info h4 {
   font-size: 1rem;
   margin-bottom: 0.25rem;
+}
+
+.connect-info p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.connect-item a {
+  color: inherit;
 }
 
 .connect-info p {
@@ -785,6 +786,7 @@ blockquote footer {
 .whatsapp-btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.75rem;
   padding: 0.875rem 1.5rem;
   background: linear-gradient(135deg, #25d366 0%, #20ba5d 100%);
@@ -796,23 +798,173 @@ blockquote footer {
   text-decoration: none;
   border: none;
   cursor: pointer;
+  max-width: 100%;
+  width: fit-content;
 }
 
-.whatsapp-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(37, 211, 102, 0.3);
+/* Responsive Styles */
+.nav-links {
+  align-items: center;
 }
 
-.whatsapp-btn i {
-  font-size: 1.25rem;
+.nav-links.active {
+  display: flex;
 }
 
-/* Footer */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .hero-section {
+    flex-wrap: wrap;
+    padding: 3rem 0;
+  }
+
+  .hero-content,
+  .hero-image {
+    width: 100%;
+  }
+
+  .hero-image {
+    margin-top: 2rem;
+  }
+
+  .profile-image {
+    width: min(260px, 80vw);
+    height: min(260px, 80vw);
+  }
+
+  .experience-card-layout {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+
+  .experience-image-wrapper {
+    min-height: 220px;
+  }
+
+  .tabs-list {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-image {
+    height: 240px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+    background: rgba(10, 10, 10, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 1rem;
+    border-radius: var(--radius);
+  }
+
+  .nav-links a {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius);
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .whatsapp-btn {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .tabs-list {
+    gap: 0.75rem;
+  }
+
+  .section {
+    padding: 2.5rem 0;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .experience-card-layout {
+    gap: 1.5rem;
+  }
+
+  .experience-content {
+    gap: 1rem;
+  }
+
+  .experience-list li,
+  .awards-list li {
+    font-size: 0.95rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-buttons,
+  .project-footer,
+  .contact-grid,
+  .connect-list {
+    flex-direction: column;
+  }
+
+  .hero-buttons {
+    align-items: stretch;
+  }
+
+  .project-footer {
+    gap: 0.75rem;
+  }
+
+  .btn,
+  .btn-sm,
+  .whatsapp-btn {
+    width: 100%;
+  }
+
+  .experience-card-layout {
+    padding: 1.25rem;
+  }
+
+  .experience-image-wrapper {
+    min-height: 180px;
+  }
+
+  .project-image {
+    height: 200px;
+  }
+
+  .nav-links {
+    padding: 0.75rem;
+  }
+}
+
 footer {
-  padding: 2rem 0;
-  text-align: center;
-  border-top: 1px solid var(--border-color);
   margin-top: 4rem;
+  
 }
 
 .social-links {
@@ -840,6 +992,10 @@ footer {
 
 .social-links i {
   font-size: 1.2rem;
+}
+
+footer {
+  text-align: center;
 }
 
 footer p {
