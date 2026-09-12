@@ -833,6 +833,9 @@ blockquote footer {
   .profile-image {
     width: min(260px, 80vw);
     height: min(260px, 80vw);
+    radius: 60%;
+    border-radius: 50%;
+    z-index: 1;
   }
 
   .experience-card-layout {
