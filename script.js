@@ -93,14 +93,14 @@ document.addEventListener("DOMContentLoaded", () => {
       })
       .then(response => {
         if (response.ok) {
-          alert("✅ Thank you for your message!");
+          alert("Thank you for your message!");
           this.reset(); // Clear form
         } else {
-          alert("❌ Oops! Something went wrong. Please try again.");
+          alert("Oops! Something went wrong. Please try again.");
         }
       })
       .catch(error => {
-        alert("⚠️ An error occurred: " + error.message);
+        alert("An error occurred: " + error.message);
       });
     });
   }

@@ -322,8 +322,8 @@ Built with a focus on Gender Equality (SDG 5) and Reduced Inequalities (SDG 10),
   <div class="form-group">
     <label for="name">Name</label>
     <input
-      type="text"
-      id="name"
+      type="title"
+      id="title"
       name="from_name"
       placeholder="Your name"
       required
@@ -481,11 +481,11 @@ Built with a focus on Gender Equality (SDG 5) and Reduced Inequalities (SDG 10),
       statusText.textContent = "";
 
       emailjs
-        .sendForm("service_10lryjb", "template_9g4n9zr", contactForm)
+        .sendForm("service_reggz68", "template_vmyqwdh", contactForm)
         .then(
           function () {
             statusText.style.color = "green";
-            statusText.textContent = "✅ Thank you! Your message has been sent successfully.";
+            statusText.textContent = "Thank you! Your message has been sent successfully.";
             contactForm.reset();
             submitBtn.disabled = false;
             submitBtn.textContent = originalBtnText;
@@ -494,7 +494,7 @@ Built with a focus on Gender Equality (SDG 5) and Reduced Inequalities (SDG 10),
             console.error("EmailJS Error:", error);
             statusText.style.color = "red";
             statusText.textContent =
-              "❌ Oops! Something went wrong. Please try again later.";
+              "Oops! Something went wrong. Please try again later.";
             submitBtn.disabled = false;
             submitBtn.textContent = originalBtnText;
           }
